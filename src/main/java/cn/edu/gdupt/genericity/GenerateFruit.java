@@ -2,6 +2,7 @@ package cn.edu.gdupt.genericity;
 
 /**
  * 泛型方法与普通方法的区分与测试
+ *
  * @author Liang Xiaobin<1490556728@qq.com>
  * @version 2019.09.07
  * @since JDK1.8

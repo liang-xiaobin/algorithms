@@ -4,9 +4,8 @@ package cn.edu.gdupt.sort;
  * 冒泡排序
  * 时间复杂度为O(n^2),空间复杂度为O(1)
  *
- * @author Liang Xiaobin
- * @author 1490556728@qq.com
- * @version 2019.06.01
+ * @author Liang Xiaobin<1490556728@qq.com>
+ * @version 2019.09.08
  * @since JDK1.8
  */
 public class BubbleSort extends SortTemplet {

@@ -9,15 +9,15 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @author Liang Xiaobin
- * @author 1490556728@qq.com
- * @version 2019.05.30
+ * @author Liang Xiaobin<1490556728@qq.com>
+ * @version 2019.09.08
  * @since JDK1.8
  */
 public class Utils {
     /**
      * 通过指定路径，获取指定数量的数字
-      * @param source
+     *
+     * @param source
      * @param num
      * @return int[]
      */
@@ -48,6 +48,7 @@ public class Utils {
 
     /**
      * 将数组中的数字保存在指定路径的文件中
+     *
      * @param destination
      * @param result
      */
@@ -70,6 +71,7 @@ public class Utils {
 
     /**
      * 获取指定数量级,指定个数的数字
+     *
      * @param bits
      * @param numbers
      * @return int[]
@@ -87,6 +89,7 @@ public class Utils {
 
     /**
      * 用于设置文件的路径
+     *
      * @param filename
      * @return
      */
@@ -96,6 +99,7 @@ public class Utils {
 
     /**
      * 将基本数据类型数组转换为包装数据类型数组
+     *
      * @param source
      * @return
      */

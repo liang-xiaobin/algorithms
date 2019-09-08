@@ -6,9 +6,8 @@ import org.junit.Test;
 import java.util.Arrays;
 
 /**
- * @author Liang Xiaobin
- * @author 1490556728@qq.com
- * @version 2019.06.01
+ * @author Liang Xiaobin<1490556728@qq.com>
+ * @version 2019.09.08
  * @since JDK1.8
  */
 public class BinarySearchTest {
