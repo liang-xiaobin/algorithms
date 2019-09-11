@@ -17,8 +17,8 @@ public class Utils {
     /**
      * 通过指定路径，获取指定数量的数字
      *
-     * @param source
-     * @param num
+     * @param source 指定文本的原路径
+     * @param num    指定获取数字数量
      * @return int[]
      */
     public static int[] getNumberByTxt(String source, int num) {
@@ -49,8 +49,8 @@ public class Utils {
     /**
      * 将数组中的数字保存在指定路径的文件中
      *
-     * @param destination
-     * @param result
+     * @param destination 目标文件路径
+     * @param result      包含数字的数组
      */
     public static void writeNumberToTxt(String destination, int[] result) {
         try {
@@ -72,9 +72,9 @@ public class Utils {
     /**
      * 获取指定数量级,指定个数的数字
      *
-     * @param bits
-     * @param numbers
-     * @return int[]
+     * @param bits    指定数量级
+     * @param numbers 数字个数
+     * @return int[] 生成数字的数组
      */
     public static int[] setRandom(int bits, int numbers) {
         int[] result = new int[numbers];
@@ -90,8 +90,8 @@ public class Utils {
     /**
      * 用于设置文件的路径
      *
-     * @param filename
-     * @return
+     * @param filename 文件名
+     * @return 生成的文件路径
      */
     public static String setPath(String filename) {
         return "E:\\java\\algorithms\\" + filename + ".txt";
@@ -100,8 +100,8 @@ public class Utils {
     /**
      * 将基本数据类型数组转换为包装数据类型数组
      *
-     * @param source
-     * @return
+     * @param source 源数组
+     * @return 转换后数组
      */
     public static Integer[] intArraytoIntegerArray(int[] source) {
         Integer[] result = new Integer[source.length];
