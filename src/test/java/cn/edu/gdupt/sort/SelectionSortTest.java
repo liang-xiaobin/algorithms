@@ -45,6 +45,6 @@ public class SelectionSortTest {
         long sortTime = sortEndTime - sortStartTime;
         SelectionSort.show(sortIntegers);
         System.out.println(sortTime);
-        System.out.println("有序情况下花费时间是无序的:" + sortTime / noSortTime + "倍");
+        System.out.println("无序情况下花费时间是有序的:" + (float)noSortTime / sortTime + "倍");
     }
 }

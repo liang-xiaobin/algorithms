@@ -45,7 +45,8 @@ public class InsertionSortTest {
         long sortEndTime = System.nanoTime();
         long sortTime = sortEndTime - sortStartTime;
         InsertionSort.show(sortsInteger);
-        System.out.println(sortTime);
-        System.out.println("无序情况下花费时间是有序的:" + noSortTime / sortTime + "倍");
+        System.out.println("有序情况:"+sortTime);
+        System.out.println("无序情况:"+noSortTime);
+        System.out.println("无序情况下花费时间是有序的:"+(float)noSortTime/sortTime);
     }
 }

@@ -41,7 +41,6 @@ public class Utils {
             fileReader.close();
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
         }
         return result;
     }
@@ -56,8 +55,8 @@ public class Utils {
         try {
             FileWriter fileWriter = new FileWriter(destination);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            for (int i = 0; i < result.length; i++) {
-                bufferedWriter.write(String.valueOf(result[i]));
+            for (int res : result) {
+                bufferedWriter.write(String.valueOf(res));
                 bufferedWriter.newLine();
             }
             bufferedWriter.flush();
