@@ -33,7 +33,7 @@ public class QuickSort {
      * @param a  切分数组
      * @param lo 切分数组起始索引
      * @param hi 切分数组结束索引
-     * @return 没有返回值
+     * @return 切分完成的元素的数组位置
      */
     private static int partition(Comparable[] a, int lo, int hi) {
         //将数组切分为a[lo..i-1],a[i],a[i+1..hi]
@@ -56,9 +56,10 @@ public class QuickSort {
             if (i >= j) {
                 break;
             }
+            SortTemplet.exch(a, i, j);
         }
         // 将v=a[j]放入正确的位置
-        SortTemplet.exch(a, lo, hi);
+        SortTemplet.exch(a, lo, j);
         // a[lo..j-1]<=a[j]<=a[j+1..hi]达成
         return j;
     }
