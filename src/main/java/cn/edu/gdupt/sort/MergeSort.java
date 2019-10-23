@@ -9,34 +9,10 @@ package cn.edu.gdupt.sort;
  * @since JDK1.8
  */
 public class MergeSort {
-    public static Comparable[] aux;
-
     /**
-     * 将a[lo..mid] 和 a[mid+1..hi]归并
-     *
-     * @param a   需要排序的数组
-     * @param lo  数组的开始索引
-     * @param mid 数组归并的中点
-     * @param hi  数组归并的终点
+     * 归并排序使用的辅助数组
      */
-    public static void merge(Comparable a[], int lo, int mid, int hi) {
-        int i = lo;
-        int j = mid + 1;
-        //将a[lo..hi]复制到aux[lo..hi]
-        System.arraycopy(a, lo, aux, lo, hi - lo + 1);
-        //归并回到a[lo..hi]
-        for (int k = lo; k <= hi; k++) {
-            if (i > mid) {
-                a[k] = aux[j++];
-            } else if (j > hi) {
-                a[k] = aux[i++];
-            } else if (SortTemplet.less(aux[i], aux[j])) {
-                a[k] = aux[i++];
-            } else {
-                a[k] = aux[j++];
-            }
-        }
-    }
+    protected static Comparable[] aux;
 
     public static void sort(Comparable[] a) {
         //一次性分配空间
@@ -55,5 +31,32 @@ public class MergeSort {
         //将右半边排序
         sort(a, mid + 1, hi);
         merge(a, lo, mid, hi);
+    }
+
+    /**
+     * 将a[lo..mid] 和 a[mid+1..hi]归并
+     *
+     * @param a   需要排序的数组
+     * @param lo  数组的开始索引
+     * @param mid 数组归并的中点
+     * @param hi  数组归并的终点
+     */
+    protected static void merge(Comparable a[], int lo, int mid, int hi) {
+        int i = lo;
+        int j = mid + 1;
+        //将a[lo..hi]复制到aux[lo..hi]
+        System.arraycopy(a, lo, aux, lo, hi - lo + 1);
+        //归并回到a[lo..hi]
+        for (int k = lo; k <= hi; k++) {
+            if (i > mid) {
+                a[k] = aux[j++];
+            } else if (j > hi) {
+                a[k] = aux[i++];
+            } else if (SortTemplet.less(aux[i], aux[j])) {
+                a[k] = aux[i++];
+            } else {
+                a[k] = aux[j++];
+            }
+        }
     }
 }

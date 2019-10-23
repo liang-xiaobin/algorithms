@@ -3,7 +3,7 @@ package cn.my.sort;
 import org.junit.Test;
 
 /**
- * my插入排序测试，时间复杂度为O(N^2),空间复杂度为O(1)
+ * my选择排序测试，时间复杂度为O(N^2),空间复杂度为O(1)
  *
  * @author Liang Xiaobin<1490556728@qq.com>
  * @version 2019/10/23
